@@ -2,27 +2,19 @@
 
 ## About the Project
 
-The **URL Shortener** project is a web-based application that simplifies long URLs by converting them into shorter, more shareable links. This tool is particularly useful for improving user experience, sharing links on platforms with character limits, and tracking the performance of shared URLs.
-
 ---
 
 ## Features
-
-- **Input Field**: Users can enter a long URL into the input field provided on the website.
-- **Shortened URL Output**: After submitting the long URL, the application generates a shorter version of the URL, which is displayed for users to copy and share.
 
 ---
 
 ## Glimpse of the Website
 
-- Input Field: Enter the long URL you want to shorten.
-- Shortened URL Display: View and copy your shortened URL instantly.
-
 ---
 
 ## Visit the Website
 
-[Deployed Link](#)
+Deployed Link
 
 ---
 
@@ -53,4 +45,12 @@ The **URL Shortener** project is a web-based application that simplifies long UR
    ```
 3. Install dependencies:
    ```bash
-   pip
+   pip install -r requirements.txt
+   ```
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+5. Open your browser and visit `http://127.0.0.1:5000`.
+
+
