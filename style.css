@@ -1,0 +1,151 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+   /* color: white;*/
+}
+
+/* Background Image */
+.background-image {
+    background-image: url('bg2.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    position: fixed; /* Fixed position to cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send to back */
+}
+
+/* Header Section Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(226, 221, 221, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(50px); /* Added blur effect */
+    /*background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent blue */
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1; /* Bring header above background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for elevation */
+}
+
+.logo img {
+   /* height: 50px;/*
+    /* Adjust logo size */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Divider Line */
+.divider {
+    border: none;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5); /* Light divider */
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height based on header/footer */
+}
+
+.shorten-bar {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Added blur effect */
+    padding: 20px;
+    border-radius: 10px; /* Slightly increased border radius */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for elevation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Increased width for better responsiveness */
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+/* Updated URL Input Field */
+.url-input {
+    width: 100%; /* Full width of the shorten bar */
+    padding: 10px;
+    border: 2px solid #0a0a0a; /* Blue border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.shorten-button {
+    background-color: #007bff; /* Blue button */
+    border: none;
+    padding: 15px 27px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.shorten-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Footer Section Styling */
+footer {
+    background-color: #343a40; /* Dark gray background */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .shorten-button {
+        width: 100%; /* Full width button on small screens */
+    }
+}
